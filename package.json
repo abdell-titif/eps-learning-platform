@@ -1,21 +1,24 @@
 {
   "name": "eps-platform",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
+    "@remix-run/router": "^1.23.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "axios": "^1.6.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^6.22.3",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +38,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "react-refresh": "^0.16.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   }
 }
